@@ -1,0 +1,75 @@
+.welcomePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f8f9fa; 
+}
+
+.title {
+  font-size: 48px; 
+  font-weight: 600;
+  color: #333;
+  width: 798px;
+  margin: 10px auto;
+}
+
+.description {
+  font-size: 16px; 
+  color: #666;
+  line-height: 1.6;
+  margin-top: 10px;
+  max-width: 798px;
+  font-weight: 400;
+}
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;  
+    margin:30px  auto 0;
+
+   Button{
+    padding: 20px 40px;
+   }
+
+}
+
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem; /* 32px */
+  }
+
+  .description {
+    font-size: 1rem; /* 16px */
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .welcomePage {
+    padding: 40px 15px;
+    height: auto; /* Let the content dictate the height */
+  }
+
+  .title {
+    font-size: 1.75rem; /* 28px */
+  }
+
+  .description {
+    font-size: 0.9375rem; 
+  }
+}
+
+@media (max-width: 375px) {
+  .title {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  .description {
+    font-size: 0.875rem; /* 14px */
+  }
+}
