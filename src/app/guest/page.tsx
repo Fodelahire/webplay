@@ -1,10 +1,14 @@
-import styles from "./GuestPage.module.scss";
+import React from "react";
+import GuestLayout from "./layout"; 
+import styles from "@/styles/dashboard/guest/GuestLayout.module.scss"; 
+import WelcomePage from "./components/welcomePage";
 
 export default function GuestPage() {
   return (
-    <div className={styles.guestPage}>
-      <h1>Welcome to Fodelahire</h1>
-      <p>Connecting talents and companies effortlessly.</p>
-    </div>
+    <GuestLayout>
+      <div className={styles.guestPage}>
+       <WelcomePage/>
+      </div>
+    </GuestLayout>
   );
 }

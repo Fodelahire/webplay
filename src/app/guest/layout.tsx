@@ -1,6 +1,6 @@
 import React from "react";
 import GuestNavbar from "./components/GuestNavbar"; 
-import styles from "./GuestLayout.module.scss"; 
+// import styles from "@/styles/guest.module.scss"; 
 
 export default function GuestLayout({
   children,
@@ -8,9 +8,9 @@ export default function GuestLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className={styles.guestLayout}>
+    <div >
       <GuestNavbar /> 
-      <main className={styles.mainContent}>{children}</main>
+      <main >{children}</main>
     </div>
   );
 }
