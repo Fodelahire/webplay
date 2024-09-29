@@ -1,12 +1,14 @@
 import React from 'react';
-import styles from './footer.module.scss';
-
+import styles from '@/styles/components/footer.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faInstagram, faLinkedinIn, faTwitter, } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope as solidEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.logo}>
-        <img src="/logo.svg" alt="Fodelahire Logo" />
+        <img src="images/logo.png" alt="Fodelahire Logo" />
         <p>Connecting Ambition with Opportunity</p>
       </div>
 
@@ -55,11 +57,16 @@ const Footer = () => {
         <p className={styles.subscribeText}>Join our Slack community to connect with others and stay updated with the latest opportunities.</p>
         <div className={styles.subscribeInput}>
           <input type="email" placeholder="Enter your email" />
-          <button></button>
+          <button>
+            <FontAwesomeIcon icon={solidEnvelope} />
+          </button>
         </div>
-        <div className={styles.socialIcons}>
-          
-        </div>
+      </div>
+
+      <hr className={styles.horizontalLine} />
+
+      <div className={styles.footerNote}>
+        <p>{new Date().getFullYear()} Fodelahire. All Rights Reserved.</p>
       </div>
     </footer>
   );

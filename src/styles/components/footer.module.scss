@@ -3,14 +3,21 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: 2rem 1rem;
-  background-color: #fff;
-  border-top: 1px solid #ddd;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+  position: relative;
 
   .logo {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
     img {
-      width: 120px;
+      width: 100px;
+      height: auto;
     }
+
     p {
       margin-top: 10px;
       color: #4a4a4a;
@@ -18,113 +25,165 @@
     }
   }
 
-  .footer-section {
+  .footerSection {
     flex: 2;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
 
-    .section-title {
-      font-weight: bold;
-      margin-bottom: 1rem;
-    }
+    div {
+      .sectionTitle {
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: #4a4a4a;
+      }
 
-    ul {
-      list-style-type: none;
-      padding: 0;
+      ul {
+        list-style-type: none;
+        padding: 0;
 
-      li {
-        margin-bottom: 0.5rem;
-        a {
-          color: #4a4a4a;
-          text-decoration: none;
-          &:hover {
-            color: #000;
+        li {
+          margin-bottom: 0.5rem;
+
+          a {
+            color: #4a4a4a;
+            text-decoration: none;
+
+            &:hover {
+              color: #000;
+            }
           }
         }
       }
     }
   }
 
-  .subscribe-section {
-    flex: 2;
+  .subscribeSection {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
     text-align: right;
-    .subscribe-text {
+    align-items: flex-end;
+
+    .subscribeText {
       margin-bottom: 1rem;
       font-size: 1rem;
       color: #4a4a4a;
     }
 
-    .subscribe-input {
+    .subscribeInput {
       display: flex;
       align-items: center;
+      position: relative;
+
       input {
-        padding: 0.5rem;
-        border: 1px solid #ccc;
-        border-radius: 20px;
-        width: 200px;
-        margin-right: 10px;
+        padding: 0.75rem 1rem;
+        border: 1px solid #ddd;
+        border-radius: 50px;
+        width: 250px;
+        font-size: 1rem;
+        transition: all 0.3s ease;
+        padding-left: 20px;
+
+        &:focus {
+          outline: none;
+          border-color: #4a4a4a;
+        }
       }
 
       button {
-        padding: 0.5rem 1rem;
+        position: absolute;
+        width: 35px;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 10px ;
         background-color: #4a4a4a;
         border: none;
-        border-radius: 20px;
+        border-radius: 50px;
         color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         cursor: pointer;
+        font-size: 1.2rem;
+
         &:hover {
           background-color: #333;
+        }
+
+        svg {
+          font-size: 1.2rem;
         }
       }
     }
   }
 
-  .social-icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 1rem;
+  .horizontalLine {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 2rem 0 1rem 0;
+  }
 
-    a {
-      color: #4a4a4a;
-      margin-right: 1rem;
-      font-size: 1.5rem;
-      &:hover {
-        color: #000;
-      }
+  .footerNote {
+    width: 100%;
+    text-align: left;
+    padding: 0 20px;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #4a4a4a;
+  }
+
+  @media (max-width: 1024px) {
+    .footerSection, .subscribeSection {
+      flex: 1;
     }
   }
 
-  /* Responsive */
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
     text-align: center;
 
-    .footer-section {
+    .logo, .footerSection, .subscribeSection {
+      align-items: center;
+    }
+
+    .footerSection {
       flex-direction: column;
       align-items: center;
+    }
+
+    .subscribeSection {
+      .subscribeInput {
+        justify-content: center;
+
+        input {
+          width: 100%;
+        }
+      }
+    }
+
+    .horizontalLine {
       margin-top: 1rem;
-    }
-
-    .subscribe-section {
-      margin-top: 1.5rem;
-    }
-
-    .social-icons {
-      justify-content: center;
     }
   }
 
   @media (max-width: 480px) {
     padding: 1rem;
-    .footer-section {
-      font-size: 0.9rem;
-    }
 
-    .subscribe-input {
+    .subscribeInput {
+      flex-direction: column;
+
       input {
-        width: 150px;
+        margin-bottom: 0.5rem;
+        width: 100%;
+      }
+
+      button {
+        margin-left: 0;
       }
     }
   }
