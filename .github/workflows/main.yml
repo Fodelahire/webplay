@@ -28,4 +28,4 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: seunfola/webplay:latest  # Replace with your DockerHub username and repository name
+        tags: seunfola/webplay:latest  # Using your DockerHub username and repo name
