@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from '@/styles/components/footer.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faInstagram, faLinkedinIn, faTwitter, } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faInstagram, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope as solidEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
@@ -67,6 +67,21 @@ const Footer = () => {
 
       <div className={styles.footerNote}>
         <p>{new Date().getFullYear()} Fodelahire. All Rights Reserved.</p>
+      </div>
+
+      <div className={styles.socialMedia}>
+        <a href="https://www.facebook.com" aria-label="Facebook">
+          <FontAwesomeIcon icon={faFacebookF} />
+        </a>
+        <a href="https://www.twitter.com" aria-label="Twitter">
+          <FontAwesomeIcon icon={faTwitter} />
+        </a>
+        <a href="https://www.instagram.com" aria-label="Instagram">
+          <FontAwesomeIcon icon={faInstagram} />
+        </a>
+        <a href="https://www.linkedin.com" aria-label="LinkedIn">
+          <FontAwesomeIcon icon={faLinkedinIn} />
+        </a>
       </div>
     </footer>
   );
