@@ -3,7 +3,7 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - development
+      - development  # This workflow triggers when changes are pushed to the development branch
 
 jobs:
   build:
@@ -28,4 +28,4 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: your-dockerhub-username/your-repo-name:latest
+        tags: seunfola/webplay:latest  # Replace with your DockerHub username and repository name
