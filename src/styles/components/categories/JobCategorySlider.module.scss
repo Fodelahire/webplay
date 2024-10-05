@@ -35,8 +35,16 @@
 .allCategories {
   font-size: 0.9rem;
   color: #635b42;
+  border: 1px solid #635b42; 
+  border-radius: 5px;
+  padding: 10px;   
   text-decoration: none;
+  
+  a:hover{
+    text-decoration: none;
+  }
 }
+
 
 .sliderWrapper {
   position: relative;

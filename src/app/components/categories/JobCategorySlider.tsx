@@ -23,7 +23,7 @@ const JobCategorySlider: React.FC = () => {
       
         <div> 
         <a href="/all-categories" className={styles.allCategories}>
-          All Categories &gt;
+          All Categories
         </a>
         </div>
 
