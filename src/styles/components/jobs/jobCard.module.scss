@@ -1,0 +1,89 @@
+.jobCard {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.titleSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.employmentType {
+  font-size: 0.875rem;
+  color: #777;
+}
+
+.addButton {
+  background-color: #3a4d5c;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+
+.divider {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 1rem 0;
+}
+
+.details {
+  font-size: 0.875rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.location {
+  margin-bottom: 0.5rem;
+}
+
+.salary {
+  margin-bottom: 1rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.designScope {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.iconPlaceholder {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  border-radius: 8px;
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
