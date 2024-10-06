@@ -14,7 +14,7 @@ const GuestNavbar: React.FC = () => {
         </div>
 
         <ul className={styles.navLinks}>
-          <li><Link href="#about">About</Link></li>
+          <li><Link href="/about-us">About</Link></li>
           <li><Link href="/dashboard/employer">For Companies</Link></li>
           <li><Link href="/dashboard/talent">For Talent</Link></li>
           <li><Link href="#pricing">Pricing</Link></li>

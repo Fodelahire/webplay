@@ -1,6 +1,6 @@
 import React from 'react';
-import TeamMember from './TeamMember';
-import Features from './feature';
+import TeamMember from './components/TeamMember';
+import Features from './components/feature';
 import styles from '@/styles/dashboard/guest/about-us/meetUs.module.scss';
 
 const MeetTheTeam: React.FC = () => {
