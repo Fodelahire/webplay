@@ -10,11 +10,6 @@ const MeetTheTeam: React.FC = () => {
         <h2 className={styles.heading}>Meet The Team</h2>
         <div className={styles.teamGrid}>
           <TeamMember 
-            name="Ayodeji Ejigbo" 
-            role="Co-Founder" 
-            imageSrc="/path-to-image/ayodeji.jpg" 
-          />
-          <TeamMember 
             name="Damilare Sam" 
             role="Co-Founder" 
             imageSrc="/path-to-image/damilare.jpg" 
