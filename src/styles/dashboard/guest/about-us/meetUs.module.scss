@@ -1,0 +1,21 @@
+.container {
+  padding: 20px;
+  background-color: #f9f4ed;
+}
+
+.teamSection, .featureSection {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #4A4A4A;
+  margin-bottom: 20px;
+}
+
+.teamGrid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
