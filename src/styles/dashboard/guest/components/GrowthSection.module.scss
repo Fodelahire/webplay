@@ -1,0 +1,95 @@
+.growthSection {
+  background-color: #F6F4F2; // beige color or similar background
+  padding: 2rem 0;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .heading {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      color: #333;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #666;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  .cardsContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+    .card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+      text-align: center;
+      flex: 1;
+      width: 250px; 
+      height: 350px; 
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h3 {
+        font-size: 1.5rem;
+        color: #333;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #666;
+        margin-bottom: 1rem;
+      }
+
+      &.certificateCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .certificateImage {
+          margin-top: 1rem;
+          width: 100%; 
+          height: 150px;
+          overflow: hidden; 
+          position: relative;
+
+          img {
+            width: 100%;
+            height: auto;
+            object-fit: cover; 
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .cardsContainer {
+      flex-direction: column;
+      align-items: center;
+
+      .card {
+        width: 100%; 
+      }
+    }
+  }
+}
