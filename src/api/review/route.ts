@@ -5,7 +5,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   if (req.method === 'GET') {
     try {
       const reviews = await prisma.review.findMany({
-        take: 6, // Limit to the first 6 reviews
+        take: 6, 
       });
       res.status(200).json(reviews);
     } catch (error) {
