@@ -1,10 +1,28 @@
-.signupContainer {
-  max-width: 500px;
+.signupPageContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.signupImageContainer {
+  flex: 1;
+  text-align: center;
+
+  .signupImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+}
+
+.signupFormContainer {
+  flex: 1;
 }
 
 .signupForm {
@@ -115,7 +133,18 @@
   }
 }
 
-// Consolidated Mobile adjustments for small screens
+// Consolidated Mobile adjustments
+@media (max-width: 768px) {
+  .signupPageContainer {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .signupImageContainer {
+    margin-bottom: 1.5rem;
+  }
+}
+
 @media (max-width: 600px) {
   .signupContainer {
     padding: 1rem;

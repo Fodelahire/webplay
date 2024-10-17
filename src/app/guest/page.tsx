@@ -6,16 +6,20 @@ import JobCategorySlider from "../components/categories/JobCategorySlider";
 import FeaturedJobs from "../components/job/featureJobs";
 import EmployerPostJob from "./components/postJobBanner";
 import GrowthSection from "./components/GrowthSection";
+import FAQ from "../components/Faq/page";
+import Reviews from "../components/categories/Review/page";
 
 export default function GuestPage() {
   return (
     <GuestLayout>
       <div className={styles.guestPage}>
        <WelcomePage/>
-        <GrowthSection/>
+       <GrowthSection/>
        <JobCategorySlider/>
        <FeaturedJobs/>
        <EmployerPostJob/>
+       <Reviews />
+       <FAQ />
       </div>
     </GuestLayout>
   );

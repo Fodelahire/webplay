@@ -30,7 +30,7 @@ const GrowthSection = () => {
             <h3>+500 Certificates to be Issued</h3>
             <p>Get certified and increase your credibility.</p>
             <div className={styles.certificateImage}>
-              <img src="/images/certifcate.png" alt="Certificate" />
+              {/* <img src="/images/certifcate.png" alt="Certificate" /> */}
             </div>
           </div>
         </div>
