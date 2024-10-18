@@ -1,11 +1,11 @@
 .navbar {
   width: 100%;
-  padding: 20px;
+  padding: 10px 20px;
   background-color: #bdb290;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+  // box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .navbarContainer {
@@ -18,14 +18,12 @@
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
 .logoText {
-  font-size: 24px;
-  margin-left: 10px;
-  font-weight: bold;
-  color: #333;
+  font-size: 32px;
+  font-weight: 700;
+  color: #455763;
 }
 
 .navLinks {
@@ -40,17 +38,18 @@
 
 .navLinks li a {
   text-decoration: none;
-  color: #333;
+  color: #455763;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .signUpButton {
-  background-color: #333;
-  color: white;
+  background-color: #455763;
+  font-size: 16px;
+  color: #E8E2DA;
   padding: 10px 20px;
   border-radius: 20px;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 

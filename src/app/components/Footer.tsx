@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.logo}>
-        <img src="images/logo.png" alt="Fodelahire Logo" />
+        <img src="/images/logo.png" alt="Fodelahire Logo" />
         <p>Connecting Ambition with Opportunity</p>
       </div>
 

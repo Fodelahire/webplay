@@ -2,8 +2,6 @@
 
 import React, { useState } from 'react';
 import styles from '@/styles/components/signup.module.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGoogle } from '@fortawesome/free-brands-svg-icons'; 
 
 const SignUp: React.FC = () => {
   const [firstName, setFirstName] = useState('');
@@ -13,7 +11,6 @@ const SignUp: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Submit form logic here
     console.log({ firstName, lastName, email, password });
   };
 
@@ -25,7 +22,7 @@ const SignUp: React.FC = () => {
     <div className={styles.signupPageContainer}>
       <div className={styles.signupImageContainer}>
         <img
-          src="/images/signup.png" 
+          src="/images/signup.png"
           alt="Sign Up Characters"
           className={styles.signupImage}
         />
@@ -84,7 +81,7 @@ const SignUp: React.FC = () => {
           <p className={styles.orText}>or</p>
 
           <button type="button" className={styles.googleSignUpButton} onClick={handleGoogleSignUp}>
-            <FontAwesomeIcon icon={faGoogle} className={styles.googleIcon} />
+            <img src="/images/google.png" alt="Google Icon" className={styles.googleIcon} />
             Sign Up with Google
           </button>
 
@@ -94,7 +91,7 @@ const SignUp: React.FC = () => {
 
           <p className={styles.terms}>
             By clicking `Sign up`, you acknowledge that you have read and accepted the 
-            <a href="#"> Terms of Service </a> and <a href="#"> Privacy Policy</a>.
+            <a href="/terms"> Terms of Service </a> and <a href="/privacy"> Privacy Policy</a>.
           </p>
         </form>
       </div>
