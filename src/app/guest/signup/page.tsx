@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import styles from '@/styles/components/signup.module.scss';
+// import { signIn } from 'next-auth/react'; 
 
 const SignUp: React.FC = () => {
   const [firstName, setFirstName] = useState('');
@@ -14,8 +15,12 @@ const SignUp: React.FC = () => {
     console.log({ firstName, lastName, email, password });
   };
 
-  const handleGoogleSignUp = () => {
-    // Handle Google sign-up logic
+  const handleGoogleSignUp = async () => {
+    try {
+      await signIn('google', { callbackUrl: '/dashboard' }); 
+    } catch (error) {
+      console.error('Google sign-up error:', error);
+    }
   };
 
   return (
