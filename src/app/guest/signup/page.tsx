@@ -2,13 +2,20 @@
 
 import React, { useState } from 'react';
 import styles from '@/styles/components/signup.module.scss';
-// import { signIn } from 'next-auth/react'; 
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { signIn } from 'next-auth/react'; 
 
 const SignUp: React.FC = () => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+
+    const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -68,16 +75,21 @@ const SignUp: React.FC = () => {
             />
           </div>
 
-          <div className={styles.inputWrapper}>
-            <label htmlFor="password">Password</label>
+ <div className={styles.inputWrapper}>
+          <label htmlFor="password">Password</label>
+          <div className={styles.passwordInputWrapper}>
             <input
-              type="password"
+              type={showPassword ? 'text' : 'password'}
               id="password"
               placeholder="Enter Your Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
+            <span className={styles.passwordIcon} onClick={togglePasswordVisibility}>
+              <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
+            </span>
           </div>
+        </div>
 
           <button type="submit" className={styles.signUpButton}>
             Sign Up
