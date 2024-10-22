@@ -23,7 +23,7 @@ const GuestNavbar: React.FC = () => {
           <li><Link href="#pricing">Pricing</Link></li>
           <li><Link href="/login">Login</Link></li>
           <li>
-            <Link href="/guest/signup">
+            <Link href="/signup">
               <Button text="Sign Up" className={styles.signUpButton} />
             </Link>
           </li>
