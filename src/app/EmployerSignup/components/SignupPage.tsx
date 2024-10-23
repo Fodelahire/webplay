@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import styles from '@/styles/components/signup.module.scss';
+import styles from '@/styles/components/Employersignup.module.scss';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { signIn } from 'next-auth/react'; 

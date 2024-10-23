@@ -1,7 +1,7 @@
 import GuestNavbar from "../guest/components/GuestNavbar"
 import SignUpPage from "./components/SignupPage"
 
-const SignUp: React.FC = () => {
+const EmployerSignUp: React.FC = () => {
   return (
     <div>
       <GuestNavbar/>
@@ -9,4 +9,4 @@ const SignUp: React.FC = () => {
     </div>
   )
 }
-export default SignUp
+export default EmployerSignUp
