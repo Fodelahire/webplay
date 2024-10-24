@@ -6,11 +6,6 @@
   background-color: #E8E2DA;
   border-radius: 8px;
   overflow: hidden;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    padding: 1.5rem;
-  }
 }
 
 .signupFormContainer {
@@ -21,11 +16,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  @media (max-width: 768px) {
-    border-top-left-radius: 0;
-    padding: 20px;
-  }
 }
 
 .signupHeader {
@@ -53,10 +43,6 @@
 .nameFields {
   display: flex;
   gap: 1rem;
-
-  @media (max-width: 600px) {
-    flex-direction: column;
-  }
 }
 
 .inputWrapper {
@@ -251,6 +237,11 @@
 
   .signupImageContainer {
     padding: 40px 20px;
+  }
+
+  .signupFormContainer {
+    border-top-left-radius: 0;
+    padding: 20px;
   }
 }
 
