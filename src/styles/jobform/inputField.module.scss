@@ -1,0 +1,35 @@
+.inputField {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+
+  .label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+
+  .input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+      border-color: #4a4a68;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .input {
+      padding: 0.65rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .label {
+      font-size: 12px;
+    }
+  }
+}

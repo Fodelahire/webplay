@@ -21,6 +21,7 @@ const GuestNavbar: React.FC = () => {
           <li><Link href="/dashboard/employer">For Companies</Link></li>
           <li><Link href="/dashboard/talent">For Talent</Link></li>
           <li><Link href="#pricing">Pricing</Link></li>
+          <li><Link href="/JobForm">Post a Job</Link></li>
           <li><Link href="/login">Login</Link></li>
           <li>
             <Link href="/signup">

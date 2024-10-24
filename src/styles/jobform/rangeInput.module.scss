@@ -1,0 +1,51 @@
+.rangeInput {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+
+  .label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+
+  .inputGroup {
+    display: flex;
+    gap: 0.5rem;
+
+    .input {
+      flex: 1;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+
+      &:focus {
+        outline: none;
+        border-color: #4a4a68;
+      }
+    }
+
+    .select {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .inputGroup {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .input, .select {
+      padding: 0.65rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .label {
+      font-size: 12px;
+    }
+  }
+}
