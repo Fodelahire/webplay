@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import styles from '@/styles/components/signup.module.scss';
-import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'; 
+import { faEye, faEyeSlash, faGlobe, faChartLine, faAward } from '@fortawesome/free-solid-svg-icons'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { signIn } from 'next-auth/react'; 
 
@@ -110,26 +110,40 @@ const SignUpPage: React.FC = () => {
       </div>
 
       <div className={styles.signupImageContainer}>
-        <img src="/images/imageTalent.png" alt="Sign Up Characters" className={styles.signupImage} />
-        
         <div className={styles.overlay}>
-          <p className={styles.quote}>
-            “We’ve been getting talents from Fodelahire for more than 12 months now
-            and we’ve never had any cause to regret this decision. I can’t imagine
-            outsourcing without Fodelahire.”
-          </p>
-          <div className={styles.authorDetailsWrapper}>
-            <p className={styles.author}>Andi Lane</p>
-            <div className={styles.stars}>
-              ★★★★☆
+          <div className={styles.iconSection}>
+            <div className={styles.iconWrapper}>
+              <FontAwesomeIcon icon={faGlobe} className={styles.icon} />
+              <p>Work Globally</p>
+            </div>
+            <div className={styles.iconWrapper}>
+              <FontAwesomeIcon icon={faChartLine} className={styles.icon} />
+              <p>Grow Rapidly</p>
+            </div>
+            <div className={styles.iconWrapper}>
+              <FontAwesomeIcon icon={faAward} className={styles.icon} />
+              <p>Excel Always</p>
             </div>
           </div>
-          <p className={styles.authorDetails}>Founder, Data Sphere<br />Data Analyzing Company</p>
-
-          <div className={styles.navigation}>
-            <div className={styles.arrow}>‹</div>
-            <div className={styles.arrow}>›</div>
-          </div>
+          <h1>
+            Join 100,000+ Professionals Shaping the Future
+          </h1>
+          <p>
+            Ready to skyrocket your career? Sign up now and gain access to:
+          </p>
+          <p className={styles.quote}> 
+            Cutting-edge projects from Fortune 500 companies <br/>
+            Flexible work arrangements tailored to your lifestyle <br/>
+            Competitive compensation packages that recognize your worth <br/>
+            A supportive community of like-minded professionals
+          </p>
+        </div>
+        <div className={styles.imagediv}>
+          <img 
+            src="/images/imageTalent.png" 
+            alt="Sign Up Characters" 
+            className={styles.signupImage} 
+          />
         </div>
       </div>
     </div>
