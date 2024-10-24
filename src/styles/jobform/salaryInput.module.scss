@@ -1,0 +1,58 @@
+.salaryInput {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+
+  .label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+
+  .inputGroup {
+    display: flex;
+    gap: 0.5rem;
+
+    .input {
+      flex: 1;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+
+      &:focus {
+        outline: none;
+        border-color: #4a4a68;
+      }
+    }
+
+    .select {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+  }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+  .salaryInput {
+    margin-bottom: 0.75rem;
+
+    .inputGroup {
+      flex-direction: column;
+      gap: 0.5rem;
+
+      .input {
+        padding: 0.65rem;
+        font-size: 13px;
+      }
+
+      .select {
+        padding: 0.65rem;
+        font-size: 13px;
+      }
+    }
+  }
+}

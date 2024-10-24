@@ -1,4 +1,4 @@
-.inputField {
+.fileUpload {
   display: flex;
   flex-direction: column;
   margin-bottom: 1.5rem;
@@ -6,39 +6,40 @@
   .label {
     font-size: 14px;
     font-weight: 500;
-    color: #4a4a68;
+    color: #666;
     margin-bottom: 0.5rem;
   }
 
-  .required {
-    color: #e74c3c;
-    font-size: 14px;
-    margin-left: 0.3rem;
-  }
-
   .input {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #ccc;
+    padding: 1rem;
+    border: 1px dashed #ccc;
     border-radius: 6px;
     font-size: 14px;
-    color: #333;
+    color: #999;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+      border-color: #4a4a68;
+    }
 
     &:focus {
       outline: none;
       border-color: #4a4a68;
     }
-
-    &:hover {
-      border-color: #4a4a68;
-    }
   }
 }
 
-/* Responsive Adjustments */
+/* Responsive Styling */
 @media (max-width: 768px) {
   .input {
-    padding: 0.65rem;
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .input {
+    padding: 0.7rem;
     font-size: 13px;
   }
 }

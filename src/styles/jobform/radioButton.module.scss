@@ -1,0 +1,42 @@
+.radioButtonGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+
+  .label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+
+  .radioOptions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .radioLabel {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+
+    input[type="radio"] {
+      margin-right: 0.5rem;
+      accent-color: #4a4a68;
+      cursor: pointer;
+    }
+  }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 600px) {
+  .radioOptions {
+    flex-direction: column;
+  }
+
+  .radioLabel {
+    font-size: 13px;
+  }
+}
